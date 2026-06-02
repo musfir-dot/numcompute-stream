@@ -44,7 +44,7 @@ def naive_best_split(X: np.ndarray, y: np.ndarray):
 
 
 def vectorised_best_split(X: np.ndarray, y: np.ndarray):
-    """The framework's own vectorised search, exposed for timing."""
+
     tree = DecisionTreeClassifier(criterion="gini")
     tree.classes_ = np.unique(y)
     w = np.ones(len(y))
